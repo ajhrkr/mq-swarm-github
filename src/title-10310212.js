@@ -1,5 +1,5 @@
-import { toSlug } from "./strings.js";
+import { slugify } from "./strings.js";
 
 export function titleSlug(title, id) {
-  return `${toSlug(title)}-${id}`;
+  return `${slugify(title)}-${id}`;
 }
