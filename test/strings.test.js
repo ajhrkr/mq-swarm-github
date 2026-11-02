@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { toSlug, truncate } from "../src/strings.js";
+import { slugify, truncate } from "../src/strings.js";
 
 test("slugifies titles", () => {
-  assert.equal(toSlug("Hello, World!"), "hello-world");
+  assert.equal(slugify("Hello, World!"), "hello-world");
 });
 
 test("truncates long strings", () => {
